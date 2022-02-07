@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Furn Store | The Furniture App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- header -->
+  <header class="full-width p-sm flex header fs-l">
+    <div>
+      <i class="mx-xs bi bi-list"></i>
+      Furnhouse
+    </div>
+    <div class="input-group">
+      <input
+        type="text"
+        class="input px-sm py-xs rounded-s"
+        placeHolder="What are you looking for?"
+      />
+    </div>
+    <div>
+      <i class="bi bi-heart mx-xs"></i>
+      <i class="bi bi-cart mx-xs"></i>
+    </div>
+  </header>
+
+  <!-- categories -->
+  <div class="full-width p-sm flex flex-center fs-l categories">
+    <ul class="list category-list fs-s flex full-width">
+      <li class="list-item transition p-xs fw-light">Dining Tables</li>
+      <li class="list-item transition p-xs fw-light" id="nav-text-avatar">
+        Beds
+      </li>
+      <li class="list-item transition p-xs fw-light" id="nav-text-avatar">
+        Sofas
+      </li>
+      <li class="list-item transition p-xs fw-light" id="nav-text-avatar">
+        Almirah
+      </li>
+    </ul>
+  </div>
+  <hr class="hr" />
+  <!-- home -->  
+  <main class="full-height grid grid-col-2">
+    <div class="m-xl flex flex-col flex-center">
+      <h4 class="h3 title">
+        We Build On-demand Furniture with cutting edge technology to give
+        you something that others can't even imagine off.
+      </h4>
+      <div class="btn-group my-md flex">
+        <a class="list-reset btn btn-primary px-md py-sm fs-s"
+          href="pages/products.html"
+        >
+          See Products
+        </a>
+        <a class="list-reset btn btn-outline-primary px-md py-sm fs-s"
+          href="pages/login.html"
+        >
+          Log In
+        </a>
+      </div>
+    </div>
+    <div class="hero-img p-md">
+      <img
+        src='./assets/hero-img.svg'
+        alt="person sitting on sofa"
+        class="full-width"
+      />
+    </div>
+  </main>
+</body>
+</html>

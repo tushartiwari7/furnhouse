@@ -1,0 +1,61 @@
+@import url("https://elevate-ui-git-list-tushartiwari7.vercel.app/components/components.css");
+
+a {
+  text-decoration: none;
+}
+
+.input {
+  background: #fefefe;
+  color: var(--text-color);
+}
+
+.categories {
+  justify-content: space-around;
+}
+
+.pointer,
+.pointer *{
+  cursor: pointer;
+}
+
+.product-list {
+  overflow-y: scroll;
+}
+
+.full-height {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app {
+  grid-template-columns: 25rem 1fr;
+}
+
+.product-list {
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+.main {
+  gap: 2rem;
+  padding-bottom: 7rem;
+}
+
+.category-list {
+  justify-content: space-around;
+}
+
+/* cards */
+.card {
+  width: 20rem;
+}
+.card-img {
+  height: 20rem;
+}
+.card-feedback {
+  margin: 0;
+}
+
+/* sidebar */
+.sidebar {
+  border-right: 1px solid var(--text-color100);
+}

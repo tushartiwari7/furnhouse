@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Listings</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="full-height" >
+  <!-- header -->
+  <header class="full-width p-sm flex header fs-l">
+  <div>
+    <i class="mx-xs bi bi-list"></i>
+    Furnhouse
+  </div>
+  <div class="input-group">
+    <input
+      type="text"
+      class="input px-sm py-xs rounded-s"
+      placeHolder="What are you looking for?"
+    />
+  </div>
+  <div>
+    <i class="bi bi-heart mx-xs"></i>
+    <i class="bi bi-cart mx-xs"></i>
+  </div>
+  </header>
+  <div class="app full-height grid p-sm">
+      <aside class="sidebar">
+        <h5 class="my-md h4">Price</h5>
+        <ul class="list m-md flex flex-col">
+          <div class="my-xs  pointer">
+            <input 
+              type="radio" 
+              id="high"
+              name="sort" 
+              value=""
+            />
+            <label for="high" class="mx-sm fs-s">High to Low</label>
+          </div>
+          <div class="my-xs  pointer">
+            <input 
+            type="radio" 
+            id="low"
+            name="sort" 
+            value=""
+          />
+          <label for="low" class="mx-sm fs-s">Low to High</label>
+          </div>
+        </ul>
+        <h5 class="my-md h4">Category</h5>
+        <ul class="list m-md flex flex-col">
+          <div class="my-xs pointer">
+            <input 
+              type="checkbox" 
+              id="armora"
+              name="armora" 
+            />
+            <label for="armora" class="mx-sm fs-s">Armora</label>
+          </div>
+          <div class="my-xs pointer">
+            <input 
+              type="checkbox" 
+              id="lexus"
+              name="lexus" 
+            />
+            <label for="lexus" class="mx-sm fs-s">Lexus</label>
+          </div>
+          <div class="my-xs pointer">
+              <input 
+                type="checkbox" 
+                id="crystal"
+                name="crystal" 
+              />
+              <label for="crystal" class="mx-sm fs-s">Crystal</label>
+          </div>        
+          <div class="my-xs pointer">
+            <input 
+              type="checkbox" 
+              id="Kook"
+              name="Kook" 
+            />
+            <label for="Kook" class="mx-sm fs-s">Kook</label>
+          </div>
+        </ul>
+        <h5 class="my-md h4">Rating</h5>
+        <ul class="list m-md flex flex-col">
+          <div class="my-xs  pointer">
+            <input 
+              type="radio" 
+              id="5star"
+              name="rating" 
+            />
+            <label for="5star" class="mx-sm fs-s">5 Star or above</label>
+          </div>
+          <div class="my-xs pointer">
+            <input 
+              type="radio" 
+              id="4Star"
+              name="rating" 
+            />
+            <label for="4Star" class="mx-sm fs-s">4 Star or above</label>
+          </div>
+          <div class="my-xs pointer">
+            <input 
+              type="radio" 
+              id="3Star"
+              name="rating" 
+            />
+            <label for="3Star" class="mx-sm fs-s">3 Star or above</label>
+          </div>
+          <div class="my-xs pointer">
+            <input 
+              type="radio" 
+              id="2Star"
+              name="rating" 
+            />
+            <label for="2Star" class="mx-sm fs-s">2 Star or above</label>
+          </div>
+          <div class="my-xs pointer">
+            <input 
+              type="radio" 
+              id="1Star"
+              name="rating" 
+            />
+            <label for="1Star" class="mx-sm fs-s">1 Star or above</label>
+          </div>
+        </ul>
+      </aside>
+      <main class="main grid product-list">    
+        <section class="card ">
+          <div class="flex flex-col pos-rel">
+            <img class="card-img" src="../assets/product1.jpeg" alt="card image">
+            <div class="card-content flex flex-col p-sm pos-abs fs-m">
+              <h3 class="card-title">Study Table</h3>
+              <label class="card-author">by crystal furnitech </label>
+            </div>
+          </div>
+          <div class="card-desc fs-s p-xs">
+            Contemporary & Modern Style Computer Desk
+          </div>
+          <div class="flex flex-row card-feedback p-xs">
+            <button class="btn btn-success rounded-s fs-xs px-sm py-xs">
+              Add To Cart
+              <i class="bi bi-cart"></i>
+            </button>
+            <button class="btn btn-icon rounded-circle btn-outline-secondary p-xs "><i class="bi bi-share"></i></button>
+            <button class="btn btn-icon rounded-circle btn-outline-secondary p-xs "><i class="bi bi-heart"></i></button>
+          </div>
+        </section>
+        <section class="card ">
+          <div class="flex flex-col pos-rel">
+            <img class="card-img" src="../assets/product2.jpeg" alt="card image">
+            <div class="card-badge pos-abs fw-bold px-sm py-xs">NEW</div>
+            <div class="card-content flex flex-col p-sm pos-abs fs-m">
+              <h3 class="card-title">Single Drawer Bed</h3>
+              <label class="card-author">
+              by kook tribe</label>
+            </div>
+          </div>
+          <div class="card-desc fs-s p-xs">
+            Engineered Wood Single Box Bed with drawer apartments
+          </div>
+          <div class="flex flex-row card-feedback p-xs">
+            <button class="btn btn-success rounded-s fs-xs px-sm py-xs">
+              Add To Cart
+              <i class="bi bi-cart"></i>
+            </button>
+            <button class="btn btn-icon rounded-circle btn-outline-secondary p-xs "><i class="bi bi-share"></i></button>
+            <button class="btn btn-icon rounded-circle btn-outline-secondary p-xs "><i class="bi bi-heart"></i></button>
+          </div>
+        </section>
+        <section class="card ">
+          <div class="flex flex-col pos-rel">
+            <img class="card-img" src="../assets/product3.jpeg" alt="card image">
+            <div class="card-content flex flex-col p-sm pos-abs fs-m">
+              <h3 class="card-title">Dressing Table</h3>
+              <label class="card-author">by armora ferns </label>
+            </div>
+          </div>
+          <div class="card-desc fs-s p-xs">
+            Original Engineered Wood Dressing Table.
+          </div>
+          <div class="flex flex-row card-feedback p-xs">
+            <button class="btn btn-success rounded-s fs-xs px-sm py-xs">
+              Add To Cart
+              <i class="bi bi-cart"></i>
+            </button>
+            <button class="btn btn-icon rounded-circle btn-outline-secondary p-xs "><i class="bi bi-share"></i></button>
+            <button class="btn btn-icon rounded-circle btn-outline-secondary p-xs "><i class="bi bi-heart"></i></button>
+          </div>
+        </section>  
+        <section class="card ">
+          <div class="flex flex-col pos-rel">
+            <img class="card-img" src="../assets/product4.jpeg" alt="card image">
+            <div class="card-content flex flex-col p-sm pos-abs fs-m">
+              <h3 class="card-title">Double Bed</h3>
+              <label class="card-author">by armora ferns </label>
+            </div>
+          </div>
+          <div class="card-desc fs-s p-xs">
+            King sized bed with back attached.
+          </div>
+          <div class="flex flex-row card-feedback p-xs">
+            <button class="btn btn-success rounded-s fs-xs px-sm py-xs">
+              Add To Cart
+              <i class="bi bi-cart"></i>
+            </button>
+            <button class="btn btn-icon rounded-circle btn-outline-secondary p-xs "><i class="bi bi-share"></i></button>
+            <button class="btn btn-icon rounded-circle btn-outline-secondary p-xs "><i class="bi bi-heart"></i></button>
+          </div>
+        </section> 
+        <section class="card ">
+          <div class="flex flex-col pos-rel">
+            <img class="card-img" src="../assets/product5.jpeg" alt="card image">
+            <div class="card-badge pos-abs fw-bold px-sm py-xs">NEW</div>
+            <div class="card-content flex flex-col p-sm pos-abs fs-m">
+              <h3 class="card-title">Sofa set</h3>
+              <label class="card-author">by deluxe woods</label>
+            </div>
+          </div>
+          <div class="card-desc fs-s p-xs">
+            3 seat Sofa set with Jute fabric.
+          </div>
+          <div class="flex flex-row card-feedback p-xs">
+            <button class="btn btn-success rounded-s fs-xs px-sm py-xs">
+              Add To Cart
+              <i class="bi bi-cart"></i>
+            </button>
+            <button class="btn btn-icon rounded-circle btn-outline-secondary p-xs "><i class="bi bi-share"></i></button>
+            <button class="btn btn-icon rounded-circle btn-outline-secondary p-xs "><i class="bi bi-heart"></i></button>
+          </div>
+        </section> 
+        <section class="card ">
+          <div class="flex flex-col pos-rel">
+            <img class="card-img" src="../assets/product6.jpeg" alt="card image">
+            <div class="card-content flex flex-col p-sm pos-abs fs-m">
+              <h3 class="card-title">Dining Table</h3>
+              <label class="card-author">by Lexus Dinings</label>
+            </div>
+          </div>
+          <div class="card-desc fs-s p-xs">
+            4 + 2 Seater Dining set with traditional design
+          </div>
+          <div class="flex flex-row card-feedback p-xs">
+            <button class="btn btn-success rounded-s fs-xs px-sm py-xs">
+              Add To Cart
+              <i class="bi bi-cart"></i>
+            </button>
+            <button class="btn btn-icon rounded-circle btn-outline-secondary p-xs "><i class="bi bi-share"></i></button>
+            <button class="btn btn-icon rounded-circle btn-outline-secondary p-xs "><i class="bi bi-heart"></i></button>
+          </div>
+        </section>
+        <section class="card ">
+          <div class="flex flex-col pos-rel">
+            <img class="card-img" src="../assets/product1.jpeg" alt="card image">
+            <div class="card-content flex flex-col p-sm pos-abs fs-m">
+              <h3 class="card-title">Study Table</h3>
+              <label class="card-author">by crystal furnitech </label>
+            </div>
+          </div>
+          <div class="card-desc fs-s p-xs">
+            Contemporary & Modern Style Computer Desk
+          </div>
+          <div class="flex flex-row card-feedback p-xs">
+            <button class="btn btn-success rounded-s fs-xs px-sm py-xs">
+              Add To Cart
+              <i class="bi bi-cart"></i>
+            </button>
+            <button class="btn btn-icon rounded-circle btn-outline-secondary p-xs "><i class="bi bi-share"></i></button>
+            <button class="btn btn-icon rounded-circle btn-outline-secondary p-xs "><i class="bi bi-heart"></i></button>
+          </div>
+        </section>
+        <section class="card ">
+          <div class="flex flex-col pos-rel">
+            <img class="card-img" src="../assets/product2.jpeg" alt="card image">
+            <div class="card-badge pos-abs fw-bold px-sm py-xs">NEW</div>
+            <div class="card-content flex flex-col p-sm pos-abs fs-m">
+              <h3 class="card-title">Single Drawer Bed</h3>
+              <label class="card-author">
+              by kook tribe</label>
+            </div>
+          </div>
+          <div class="card-desc fs-s p-xs">
+            Engineered Wood Single Box Bed with drawer apartments
+          </div>
+          <div class="flex flex-row card-feedback p-xs">
+            <button class="btn btn-success rounded-s fs-xs px-sm py-xs">
+              Add To Cart
+              <i class="bi bi-cart"></i>
+            </button>
+            <button class="btn btn-icon rounded-circle btn-outline-secondary p-xs "><i class="bi bi-share"></i></button>
+            <button class="btn btn-icon rounded-circle btn-outline-secondary p-xs "><i class="bi bi-heart"></i></button>
+          </div>
+        </section>
+        <section class="card ">
+          <div class="flex flex-col pos-rel">
+            <img class="card-img" src="../assets/product3.jpeg" alt="card image">
+            <div class="card-content flex flex-col p-sm pos-abs fs-m">
+              <h3 class="card-title">Dressing Table</h3>
+              <label class="card-author">by armora ferns </label>
+            </div>
+          </div>
+          <div class="card-desc fs-s p-xs">
+            Original Engineered Wood Dressing Table.
+          </div>
+          <div class="flex flex-row card-feedback p-xs">
+            <button class="btn btn-success rounded-s fs-xs px-sm py-xs">
+              Add To Cart
+              <i class="bi bi-cart"></i>
+            </button>
+            <button class="btn btn-icon rounded-circle btn-outline-secondary p-xs "><i class="bi bi-share"></i></button>
+            <button class="btn btn-icon rounded-circle btn-outline-secondary p-xs "><i class="bi bi-heart"></i></button>
+          </div>
+        </section>  
+      </main>
+    </div>
+</body>
+</html>
