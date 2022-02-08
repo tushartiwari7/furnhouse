@@ -10,10 +10,10 @@
 <body class="full-height" >
   <!-- header -->
   <header class="full-width p-sm flex header fs-l">
-  <div>
+  <a class="list white" href="/">
     <i class="mx-xs bi bi-list"></i>
     Furnhouse
-  </div>
+  </a>
   <div class="input-group">
     <input
       type="text"
@@ -28,7 +28,18 @@
   </header>
   <div class="app full-height grid p-sm">
       <aside class="sidebar">
-        <h5 class="my-md h4">Price</h5>
+        <h5 class="my-md h4">Filter by Price</h5>
+        <ul class="list m-md flex flex-col">
+          <div class="my-xs  pointer">
+            <input 
+              type="range"
+              min="1000"
+              max="50000"
+              step="2000"
+            />
+          </div>
+        </ul>
+        <h5 class="my-md h4">Sort by</h5>
         <ul class="list m-md flex flex-col">
           <div class="my-xs  pointer">
             <input 

@@ -13,6 +13,10 @@ a {
   justify-content: space-around;
 }
 
+.white {
+  color: white;
+}
+
 .pointer,
 .pointer *{
   cursor: pointer;
@@ -58,4 +62,6 @@ a {
 /* sidebar */
 .sidebar {
   border-right: 1px solid var(--text-color100);
+  overflow: scroll;
+  padding-bottom: 5rem;
 }
