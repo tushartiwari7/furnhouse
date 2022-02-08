@@ -8,6 +8,14 @@ a {
   grid-template-columns: 25rem 1fr;
 }
 
+.btn-login {
+  background: white;
+}
+.btn-login:hover {
+  border-color: white;
+}
+
+
 .categories,
 .category-list  {
   justify-content: space-around;
@@ -33,6 +41,11 @@ a {
 .card {
   width: fit-content;
   max-width: 30rem;
+}
+
+.clear-search-filters {
+  text-align: right;
+  display: block;
 }
 
 .input {
