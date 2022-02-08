@@ -5,8 +5,66 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>User Login</title>
+  <link rel="stylesheet" href="../style.css">
 </head>
-<body>
-  Login
+<body class=" full-height">
+  <!-- header -->
+  <header class="full-width p-sm flex header fs-l">
+  <a class="list white" href="/">
+    <i class="mx-xs bi bi-list"></i>
+    Furnhouse
+  </a>
+  <div>
+    <input
+      type="text"
+      class="input px-sm py-xs rounded-s"
+      placeHolder="What are you looking for?"
+    />
+  </div>
+  <div>
+    <i class="bi bi-heart mx-xs"></i>
+    <i class="bi bi-cart mx-xs"></i>
+  </div>
+  </header>
+  <!-- main -->
+  <main class="flex flex-center max-height">
+    <form class="card p-sm">
+      <div class="h3  text-center fw-semibold m-xs">LOGIN</div>
+      <div class="m-xs">
+        <label class="fs-s">
+          Email 
+        </label>
+        <input 
+               type="email" 
+               placeholder="tushar@furnhouse.com"
+               class="input full-width px-sm py-xs my-xs rounded-s"
+         />
+      </div>
+      <div class="m-xs">
+        <label class="fs-s">
+          Password 
+        </label>
+        <input 
+               type="password" 
+               placeholder="********"
+               class="input full-width px-sm py-xs my-xs rounded-s"
+         />
+      </div>
+      <div class="spread flex flex-center m-xs">
+        <div class="flex flex-center">
+        <input type="checkbox" name="rememberme" id="rmemberme">
+        <label for="rememberme" class="mx-xs fs-xs" >Remember Me</label>
+        </div>
+        <a href="#" class="fs-xs">Forgot your password?</a>
+      </div>
+      <button type="submit" class="btn btn-primary py-xs px-sm m-xs">
+        Login
+      </button>
+      <a class="btn btn-outline-primary fs-s list py-xs px-sm m-xs" href="/pages/signup.html">
+        Create new Account
+        <i class="bi bi-arrow-right"></i>
+      </a>
+    </form>
+  </main>
 </body>
 </html>
