@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart | FurnStore </title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="full-height">
+  <!-- header -->
+  <header class="full-width p-sm flex header fs-l">
+    <a class="list white" href="/">
+      <i class="mx-xs bi bi-list"></i>
+      Furnhouse
+    </a >
+    <div class="text-center">
+      <input
+        type="text"
+        class="input px-md py-xs rounded-s"
+        placeHolder="What are you looking for?"
+      />
+    </div>
+    <div>
+      <a href="/pages/login.html" class="btn btn-outline-primary btn-login px-sm py-xs mx-xs fs-s">
+        Login
+      </a>
+      <i class="bi bi-heart mx-xs"></i>
+      <a href="/pages/cart.html" class="list white">
+        <i class="bi bi-cart mx-xs"></i>
+      </a>
+    </div>
+  </header> 
+  <h3 class="h3 title text-center ">My Cart</h3>
+
+  <main class="grid grid-col-2 cart-page fill-height ">
+    <section class="card cart flex flex-center flex-row">
+        <img class="card-img-cart" src="../assets/product5.jpeg" alt="card image">
+        <div class="card-horizontal flex flex-col m-sm h4">
+          <div>
+            <h3 class="card-title">Sofa Set</h3>
+            <label class="card-author fw-light">by Armora woods</label>
+          </div>
+          <span class="h4">&#8377; 22999</span>
+          <div class="fw-light fs-xs">
+            Quantity: 
+            <div class="qty">
+              <button class="rounded-circle btn btn-secondary p-xs mx-xs fs-l flex flex-center">-</button>
+              <input type="number" class="rounded-circle qty-input input" name="" id="" min="1" max="5" value="1">
+              <button class="rounded-circle btn btn-secondary p-xs mx-xs fs-l flex flex-center">+</button>
+            </div>
+          </div>
+          <button class="btn btn-primary card-primary-btn rounded-s px-sm py-xs">
+            Remove from Cart
+            <i class="bi bi-cart"></i>  
+          </button>
+          <button class="btn btn-outline-primary rounded-s px-sm py-xs">
+            Move to Wishlist
+            <i class="bi bi-heart"></i>
+          </button>
+      </div>
+    </section>
+    <section class="card p-sm flex checkout">
+      <p class="h4 py-xs">Price Details</p>
+      <hr class="hr" />
+      <p class="spread flex fs-s my-xs">
+        Price-
+        <span> &#8377;22999 </span>
+      </p>
+      <p class="spread flex fs-s my-xs">
+        GST - (18%)
+        <span> &#8377;4140 </span>
+      </p>
+      <p class="spread flex fs-s my-xs">
+        Delivery Charges
+        <span> &#8377;499 </span>
+      </p>
+      <p class="spread flex fs-s my-xs">
+        Discount (-20% off)
+        <span class="discount"> -&#8377;5500 </span>
+      </p>
+      <hr class="hr"/>
+      <p class="spread flex h4 py-xs my-xs">
+        Total Amount
+        <span> &#8377;22139 </span>
+      </p>
+      
+      <p class="spread flex fs-s my-xs">
+        You will save &#8377;5500 on this order.
+      </p>
+      <button class="btn btn-success rounded-s fs-s px-sm py-xs">
+        Place Order
+        <i class="bi bi-right"></i>
+      </button>
+    </section>
+  </main>
+  </body>
+</html>
