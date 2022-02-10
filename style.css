@@ -9,12 +9,15 @@ a {
 }
 
 .btn-login {
-  background: white;
+  background: white; // transparent by default
 }
 .btn-login:hover {
-  border-color: white;
+  border-color: white; // primary color by default
 }
 
+.btn-success {
+  flex-grow: 1;
+}
 
 .categories,
 .category-list  {
@@ -22,9 +25,8 @@ a {
 }
 
 /* cards */
-.card {
- width: fit-content;
-  max-width: 30rem;
+.card.signup {
+  max-width: 40rem;
 }
 
 .clear-search-filters {
@@ -35,7 +37,6 @@ a {
 .card.cart {
   width: fit-content;
   max-width: none;
-
 }
 .card-img {
   height: 20rem;
@@ -43,8 +44,11 @@ a {
 }
 .card-img-cart {
   width: 15rem;
-  height: 20rem;
+  height: 22rem;
   object-fit: fill;
+}
+.card-feedback {
+  margin: 0;
 }
 .card-horizontal {
   gap: 1rem;
@@ -52,8 +56,10 @@ a {
 
 .cart-page {
   width: max-content;
+  max-width: 100%;
   margin: 0 auto;
-  transform: translateY(-10%);
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .checkout {
@@ -65,13 +71,21 @@ a {
   font-size: 1.1em;
 }
 
+.favorite {
+  color: var(--secondary600);
+}
+
+.favorite:hover {
+  background-color: var(--secondary200);
+}
+
 .full-height {
   height: 100vh;
   overflow: hidden;
 }
 
 .fill-height {
-  height: -webkit-fill-available;
+  height: 80vh;
 }
 
 .input {
@@ -79,6 +93,19 @@ a {
   color: var(--text-color);
 }
 
+.main {
+  gap: 2rem;
+  padding-bottom: 7rem;
+}
+
+.max-height {
+  height: 100%;
+}
+
+.page-center {
+  width: 70%;
+  margin: 0 auto;
+}
 
 .pointer,
 .pointer *{
@@ -93,13 +120,8 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 }
 
-.main {
-  gap: 2rem;
-  padding-bottom: 7rem;
-}
-
-.max-height {
-  height: 100%;
+.page-center main::-webkit-scrollbar {
+  display: none;
 }
 
 .qty {
