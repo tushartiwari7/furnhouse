@@ -15,7 +15,7 @@ a {
   border-color: white; // primary color by default
 }
 
-.btn-success {
+.btn-outline-secondary {
   flex-grow: 1;
 }
 
