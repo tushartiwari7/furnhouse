@@ -1,5 +1,4 @@
 @import url("https://elevate-ui.vercel.app/components/components.css");
-
 @import url("./style/components.css");
 
 .app {
@@ -85,9 +84,8 @@ aside {
   grid-template-areas:
     "header header"
     "sidebar main";
-  grid-template-rows: auto;
   grid-template-columns: 25rem 1fr;
-  height: 100vh;
+  grid-template-rows: auto 1fr;
 }
 .search-icon {
   display: none;
@@ -111,9 +109,9 @@ aside {
 
 /* sidebar */
 .sidebar {
+  border-right: 1px solid var(--text-color100);
   overflow-y: scroll;
 }
-
 .summary {
   grid-area: summary;
   justify-self: end;
@@ -121,7 +119,7 @@ aside {
 
 .grid-linear {
   grid-template-areas:
-    "header "
+    "header"
     "title"
     "main";
   grid-template-rows: auto auto 1fr;
@@ -177,7 +175,10 @@ aside {
     z-index: 2;
     background: white;
     left: -25rem;
+    transition: 0.3s ease-in-out;
+    height: -webkit-fill-available;
   }
+
   .searchbar {
     display: none;
   }

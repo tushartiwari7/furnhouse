@@ -16,6 +16,10 @@ a {
   justify-content: space-around;
 }
 
+.close-icon {
+  margin-left: auto;
+}
+
 /* cards */
 .cart-page > .card {
   margin: 0;
