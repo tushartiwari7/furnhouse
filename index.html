@@ -7,32 +7,36 @@
   <title>Furn Store | The Furniture App</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="full-height">
+<body class="full-height grid landing-page">
   <!-- header -->
   <header class="full-width p-sm flex header fs-l">
-    <div>
-      <i class="mx-xs bi bi-list"></i>
-      Furnhouse
-    </div>
-    <div class="text-center">
-      <input
-        type="text"
-        class="input px-md py-xs rounded-s"
-        placeHolder="What are you looking for?"
-      />
-    </div>
-    <div>
-      <a href="/pages/login.html" class="btn btn-outline-primary btn-login px-sm py-xs mx-xs fs-s">
-        Login
-      </a>
-      <a href="/pages/wishlist.html" class="list white">
-        <i class="bi bi-heart mx-xs"></i>
-      </a>
-      <a href="/pages/cart.html" class="list white">
-        <i class="bi bi-cart mx-xs"></i>
+    <div class="flex flex-center">
+      <button class="btn btn-float btn-outline-primary hamburger mx-xs rounded-circle flex flex-center">
+        <i class="mx-xs bi bi-list"></i>
+      </button>
+      <a class="list white flex flex-center" href="/">
+        Furnhouse
       </a>
     </div>
-  </header> 
+  <div class="searchbar flex flex-center">
+    <input
+      type="text"
+      class="input px-sm py-xs rounded-s"
+      placeHolder="What are you looking for?"
+    />
+  </div>
+  <div class="flex flex-center">
+    <i class="bi bi-search search-icon mx-xs"></i>
+    <a  href="/pages/login.html" class="btn btn-outline-primary btn-login px-sm py-xs mx-xs fs-s">
+      Login
+    </a>
+    <a href="/pages/wishlist.html" class="list white">
+      <i class="bi bi-heart mx-xs"></i>
+    </a>
+    <a href="/pages/cart.html" class="list white">
+      <i class="bi bi-cart mx-xs"></i>
+    </a>
+  </header>
   <!-- categories -->
   <div class="full-width p-sm flex flex-center fs-l categories">
     <ul class="list category-list fs-s flex full-width">
@@ -51,11 +55,10 @@
       </li>
     </ul>
   </div>
-  <hr class="hr" />
-  <!-- home -->  
-  <main class="full-height grid grid-col-2">
-    <div class="m-xl flex flex-col flex-center">
-      <h4 class="h3 title">
+  <!-- home -->
+  <!-- <main class="fill-height flex flex-center"> -->
+    <div class="content m-xl flex flex-col flex-center">
+      <h4 class="h3 title p-md">
         We Build On-demand Furniture with cutting edge technology to give
         you something that others can't even imagine off.
       </h4>
@@ -72,13 +75,13 @@
         </a>
       </div>
     </div>
-    <div class="hero-img p-md">
+    <div class="hero-img p-md flex flex-center">
       <img
         src='./assets/hero-img.svg'
         alt="person sitting on sofa"
         class="full-width"
       />
     </div>
-  </main>
+  <!-- </main> -->
 </body>
 </html>

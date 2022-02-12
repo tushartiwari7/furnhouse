@@ -1,0 +1,82 @@
+a {
+  text-decoration: none;
+}
+
+.btn-login,.hamburger {
+  /*  transparent by default */
+  background: white; 
+}
+.btn-login:hover,.hamburger:hover {
+  /* primary color by default */
+  border-color: white; 
+}
+
+.categories,
+.category-list  {
+  justify-content: space-around;
+}
+
+/* cards */
+.cart-page > .card {
+  margin: 0;
+}
+.card.signup {
+  max-width: 40rem;
+}
+
+.cart-page {
+  width: fit-content;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.clear-search-filters {
+  text-align: right;
+  display: block;
+}
+
+.card.cart {
+  width: fit-content;
+  max-width: none;
+}
+.card-img {
+  height: 20rem;
+  width: 20rem;
+}
+.card-img-cart {
+  width: 15rem;
+  height: 22rem;
+  object-fit: fill;
+}
+.card-feedback {
+  margin: 0;
+}
+.card-horizontal {
+  gap: 1rem;
+}
+
+.checkout {
+  min-width: 30rem;
+}
+
+.discount {
+  color: var(--dark-green);
+  font-size: 1.1em;
+}
+
+.favorite {
+  color: var(--secondary600);
+}
+
+.favorite:hover {
+  background-color: var(--secondary200);
+}
+
+.hamburger {
+  display: none;
+}
+
+.input {
+  background: white;
+  color: var(--text-color);
+}
