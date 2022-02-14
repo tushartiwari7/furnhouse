@@ -7,31 +7,38 @@
   <title>User Login</title>
   <link rel="stylesheet" href="../style.css">
 </head>
-<body class=" full-height">
+<body class="grid auth full-height">
   <!-- header -->
   <header class="full-width p-sm flex header fs-l">
-  <a class="list white" href="/">
-    <i class="mx-xs bi bi-list"></i>
-    Furnhouse
-  </a>
-  <div>
+    <div class="flex flex-center">
+      <button class="btn btn-float btn-outline-primary hamburger mx-xs rounded-circle flex flex-center">
+        <i class="mx-xs bi bi-list"></i>
+      </button>
+      <a class="list white flex flex-center" href="/">
+        Furnhouse
+      </a>
+    </div>
+  <div class="searchbar flex flex-center">
     <input
       type="text"
       class="input px-sm py-xs rounded-s"
       placeHolder="What are you looking for?"
     />
   </div>
-  <div>
+  <div class="flex flex-center">
+    <i class="bi bi-search search-icon mx-xs"></i>
+    <a  href="/pages/login.html" class="btn btn-outline-primary btn-login px-sm py-xs mx-xs fs-s">
+      Login
+    </a>
     <a href="/pages/wishlist.html" class="list white">
       <i class="bi bi-heart mx-xs"></i>
     </a>
     <a href="/pages/cart.html" class="list white">
       <i class="bi bi-cart mx-xs"></i>
     </a>
-  </div>
   </header>
   <!-- main -->
-  <main class="flex flex-center max-height">
+  <main class="flex flex-center">
     <form class="card p-sm">
       <div class="h3  text-center fw-semibold m-xs">LOGIN</div>
       <div class="m-xs">

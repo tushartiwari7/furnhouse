@@ -7,35 +7,39 @@
   <title>Cart | FurnStore </title>
   <link rel="stylesheet" href="../style.css">
 </head>
-<body class="full-height">
+<body class="full-height grid grid-linear">
   <!-- header -->
   <header class="full-width p-sm flex header fs-l">
-    <a class="list white" href="/">
-      <i class="mx-xs bi bi-list"></i>
-      Furnhouse
-    </a >
-    <div class="text-center">
-      <input
-        type="text"
-        class="input px-md py-xs rounded-s"
-        placeHolder="What are you looking for?"
-      />
-    </div>
-    <div>
-      <a href="/pages/login.html" class="btn btn-outline-primary btn-login px-sm py-xs mx-xs fs-s">
-        Login
-      </a>
-      <a href="/pages/wishlist.html" class="list white">
-        <i class="bi bi-heart mx-xs"></i>
-      </a>
-      <a href="/pages/cart.html" class="list white">
-        <i class="bi bi-cart mx-xs"></i>
+    <div class="flex flex-center">
+      <button class="btn btn-float btn-outline-primary hamburger mx-xs rounded-circle flex flex-center">
+        <i class="mx-xs bi bi-list"></i>
+      </button>
+      <a class="list white flex flex-center" href="/">
+        Furnhouse
       </a>
     </div>
-  </header> 
+  <div class="searchbar flex flex-center">
+    <input
+      type="text"
+      class="input px-sm py-xs rounded-s"
+      placeHolder="What are you looking for?"
+    />
+  </div>
+  <div class="flex flex-center">
+    <i class="bi bi-search search-icon mx-xs"></i>
+    <a  href="/pages/login.html" class="btn btn-outline-primary btn-login px-sm py-xs mx-xs fs-s">
+      Login
+    </a>
+    <a href="/pages/wishlist.html" class="list white">
+      <i class="bi bi-heart mx-xs"></i>
+    </a>
+    <a href="/pages/cart.html" class="list white">
+      <i class="bi bi-cart mx-xs"></i>
+    </a>
+  </header>
   <h3 class="h3 title my-sm text-center ">My Cart</h3>
 
-  <main class="flex cart-page fill-height ">
+  <main class="main flex flex-center page-center cart-page py-lg">
     <section class="card cart flex flex-center flex-row">
         <img class="card-img-cart" src="../assets/product5.jpeg" alt="card image">
         <div class="card-horizontal flex flex-col m-sm h4">

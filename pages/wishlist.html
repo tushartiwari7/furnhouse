@@ -7,21 +7,26 @@
   <title>Wishlist | The FurnStore App</title>
   <link rel="stylesheet" href="../style.css">
 </head>
-<body class="full-height" >
+<body class="full-height grid grid-linear" >
   <!-- header -->
-  <header class="full-width p-sm flex header pos-rel fs-l">
-  <a class="list white" href="/">
-    <i class="mx-xs bi bi-list"></i>
-    Furnhouse
-  </a>
-  <div>
+  <header class="full-width p-sm flex header fs-l">
+    <div class="flex flex-center">
+      <button class="btn btn-float btn-outline-primary hamburger mx-xs rounded-circle flex flex-center">
+        <i class="mx-xs bi bi-list"></i>
+      </button>
+      <a class="list white flex flex-center" href="/">
+        Furnhouse
+      </a>
+    </div>
+  <div class="searchbar flex flex-center">
     <input
       type="text"
       class="input px-sm py-xs rounded-s"
       placeHolder="What are you looking for?"
     />
   </div>
-  <div>
+  <div class="flex flex-center">
+    <i class="bi bi-search search-icon mx-xs"></i>
     <a  href="/pages/login.html" class="btn btn-outline-primary btn-login px-sm py-xs mx-xs fs-s">
       Login
     </a>
@@ -31,11 +36,9 @@
     <a href="/pages/cart.html" class="list white">
       <i class="bi bi-cart mx-xs"></i>
     </a>
-  </div>
   </header>
-  <div class="page-center full-height grid p-xss">
     <h4 class="h3 title text-center my-xs"> My Wishlist</h4>
-    <main class="main grid product-list">    
+    <main class="main grid page-center product-list py-sm">    
         <section class="card ">
           <div class="flex flex-col pos-rel">
             <img class="card-img" src="../assets/product1.jpeg" alt="card image">
@@ -49,7 +52,7 @@
             Contemporary & Modern Style Computer Desk
           </div>
           <div class="flex flex-row card-feedback p-xs">
-            <button class="btn btn-outline-secondary rounded-s fs-xs px-sm py-xs">
+            <button class="btn btn-outline-secondary grow rounded-s fs-xs px-sm py-xs">
               Remove From Wishlist
             </button>
             <button class="btn btn-icon favorite rounded-circle p-xs "><i class="bi bi-heart-fill"></i></button>
@@ -73,7 +76,7 @@
             3 seat Sofa set with Jute fabric.
           </div>
            <div class="flex flex-row card-feedback p-xs">
-            <button class="btn btn-outline-secondary rounded-s fs-xs px-sm py-xs">
+            <button class="btn btn-outline-secondary grow rounded-s fs-xs px-sm py-xs">
               Remove From Wishlist
             </button>
             <button class="btn btn-icon favorite rounded-circle p-xs "><i class="bi bi-heart-fill"></i></button>
@@ -96,7 +99,7 @@
             4 + 2 Seater Dining set with traditional design
           </div>
            <div class="flex flex-row card-feedback p-xs">
-            <button class="btn btn-outline-secondary rounded-s fs-xs px-sm py-xs">
+            <button class="btn btn-outline-secondary grow rounded-s fs-xs px-sm py-xs">
               Remove From Wishlist
             </button>
             <button class="btn btn-icon favorite rounded-circle p-xs "><i class="bi bi-heart-fill"></i></button>
@@ -119,7 +122,7 @@
             Contemporary & Modern Style Computer Desk
           </div>
            <div class="flex flex-row card-feedback p-xs">
-            <button class="btn btn-outline-secondary rounded-s fs-xs px-sm py-xs">
+            <button class="btn btn-outline-secondary grow rounded-s fs-xs px-sm py-xs">
               Remove From Wishlist
             </button>
             <button class="btn btn-icon favorite rounded-circle p-xs "><i class="bi bi-heart-fill"></i></button>
@@ -144,7 +147,7 @@
             Engineered Wood Single Box Bed with drawer apartments
           </div>
            <div class="flex flex-row card-feedback p-xs">
-            <button class="btn btn-outline-secondary rounded-s fs-xs px-sm py-xs">
+            <button class="btn btn-outline-secondary grow rounded-s fs-xs px-sm py-xs">
               Remove From Wishlist
             </button>
             <button class="btn btn-icon favorite rounded-circle p-xs "><i class="bi bi-heart-fill"></i></button>
@@ -167,17 +170,16 @@
             Original Engineered Wood Dressing Table.
           </div>
            <div class="flex flex-row card-feedback p-xs">
-            <button class="btn btn-outline-secondary rounded-s fs-xs px-sm py-xs">
+            <button class="btn btn-outline-secondary grow rounded-s fs-xs px-sm py-xs">
               Remove From Wishlist
             </button>
             <button class="btn btn-icon favorite rounded-circle p-xs "><i class="bi bi-heart-fill"></i></button>
           </div>
-          <button class="btn btn-success rounded-s fs-s px-sm py-xs m-xs">
+          <button class="btn btn-success rounded-s fs-s px-sm py-xs m-xs" >
             Move To Cart
             <i class="bi bi-cart"></i>
           </button>
         </section>  
       </main>
-    </div>
 </body>
 </html>
