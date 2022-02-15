@@ -18,6 +18,7 @@ a {
 
 .close-icon {
   margin-left: auto;
+  display: none;
 }
 
 /* cards */
